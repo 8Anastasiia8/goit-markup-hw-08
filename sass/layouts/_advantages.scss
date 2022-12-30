@@ -1,0 +1,107 @@
+.advntg-icon::before {
+  display: block;
+  content: " ";
+  height: 120px;
+  @media screen and (max-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+  border-radius: 4px;
+  margin-bottom: 30px;
+  outline: 1px, solid, #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+.advntg-icon1::before {
+  background-image: url("../images/antenna\ 1.svg");
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+.advntg-icon2::before {
+  background-image: url("../images/clock\ 1.svg");
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+.advntg-icon3::before {
+  background-image: url("../images/diagram\ 1.svg");
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+.advntg-icon4::before {
+  background-image: url("../images/astronaut\ 1.svg");
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+.advntg-section {
+  padding-top: 94px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
+}
+.studio-advantages {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+}
+.advntg-list {
+  width: 270px;
+  @media screen and (min-width: 480px) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
+}
+.studio-advantages .advntg-list:not(:last-child) {
+  margin-right: 30px;
+}
+.adventages-list {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+.advantages {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
