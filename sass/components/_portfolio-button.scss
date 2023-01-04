@@ -1,13 +1,12 @@
 .portfolio-button-list {
   display: flex;
   align-items: center;
-  justify-content: center;
-  .portfolio-button {
-    display: inline-block;
-    &:not(:last-child) {
-      margin-right: 8px;
-    }
-  }
+  // .portfolio-button {
+  //   display: inline-block;
+  //   &:not(:last-child) {
+  //     margin-right: 8px;
+  //   }
+  // }
 }
 
 .portfolio-btn {

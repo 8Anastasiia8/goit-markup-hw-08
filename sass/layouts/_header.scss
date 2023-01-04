@@ -1,13 +1,18 @@
 .navigation {
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .logo {
   color: #000000;
   font-family: "Raleway", "Arial", Raleway;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
 }
 .logo-1 {
   color: #2196f3;
@@ -15,7 +20,7 @@
 .navigation__list {
   display: flex;
   flex-wrap: nowrap;
-  margin-left: 93px;
+  margin-left: 87px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -26,6 +31,9 @@
   & .current {
     color: #2196f3;
   }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 .navigation__list .navigation__link:hover,
 .navigation__list .navigation__link:focus {
@@ -34,7 +42,7 @@
 }
 .contacts {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
   width: 161px;
   height: 16px;
@@ -79,13 +87,21 @@
 
 .connection {
   display: flex;
-  margin-left: auto;
+  flex-wrap: wrap;
+  justify-content: left;
+  text-align: left;
+  margin-left: 96px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  & .contacts:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 0px;
+    margin-left: auto;
+    font-size: 14px;
+    & .contacts:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 .contacts__list {

@@ -1,16 +1,24 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-
   background-color: #2f303a;
+  align-items: center;
+  display: block;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .logo-2 {
   display: flex;
+  justify-content: center;
   font-family: "Raleway";
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #ffffff;
+  @media screen and (min-width: 1200px) {
+    justify-content: left;
+  }
 }
 .studio-address {
   margin-top: 20px;
@@ -42,13 +50,32 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .soc-footer-list {
   display: flex;
   margin-top: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .footer-container {
-  display: inline;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 165px;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-right: 70px;
+  }
 }
 .footer-item {
   background-color: rgba(255, 255, 255, 0.1);
@@ -57,15 +84,47 @@
   fill: #ffffff;
 }
 .adress-container {
-  display: flex;
-}
-.address-container {
   display: block;
+  width: 100%;
+  align-items: baseline;
+  justify-content: center;
+  // text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 .footer-container-1 {
   display: block;
-  margin-left: 70px;
-  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  // margin-left: 70px;
+  // margin-top: 12px;
+  // display: inline-block;
+  // flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    // margin-right: 89px;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    margin-left: 0px;
+    margin-top: 12px;
+    display: block;
+    text-align: left;
+  }
 }
 .telegram-link {
   width: 200px;
@@ -89,4 +148,71 @@
 }
 .icon-telegram {
   margin-left: 10px;
+}
+.footer-container-2 {
+  // margin-left: 93px;
+  // margin-top: 12px;
+  // display: flex;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+    margin-top: 12px;
+    display: block;
+    width: 570px;
+    text-align: left;
+  }
+}
+
+.telegram {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+  @media screen and (min-width: 480px) {
+    gap: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+}
+.telegram-link {
+  // margin-left: 12px;
+  margin-top: 20px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+  // flex-wrap: wrap;
+}
+.email {
+  // display: flex;
+  // width: 358px;
+  margin-top: 20px;
+  height: 50px;
+  width: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2f303a;
+  padding-left: 16px;
+  outline: none;
+  color: #ffffff;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 358px;
+  }
 }
