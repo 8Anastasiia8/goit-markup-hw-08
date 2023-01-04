@@ -70,12 +70,16 @@
     width: 100%;
   }
 }
+.studio-advantages > li:not(:last-child) {
+  margin-bottom: 30px;
+}
 .advntg-list {
   width: 100%;
-  // margin-bottom: 30px;
   @media screen and (min-width: 480px) {
     width: 100%;
-    // margin-bottom: 30px;
+    .advntg-list:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
   @media screen and (min-width: 768px) {
     width: calc((100% - 60px) / 2);
