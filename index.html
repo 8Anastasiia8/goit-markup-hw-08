@@ -49,15 +49,15 @@
           >
         </li>
       </ul>
-      <button data-mobile-menu-open type="button" class="smartphone_btn">
+      <button data-mobile-menu-open type="button" class="smartphone_btn js-open-menu">
               <svg width="40px" height="40px" class="smart_open">
                  <use href="./images/icons.svg#icon-menu_40px"></use>
               </svg>
             </button>
       </div>
-      <div class="mobile-menu is-hidden" mobile-menu>
+      <div class="mobile-menu js-menu-container" mobile-menu>
             <div class="close">
-            <button data - mobile - menu - close type="button" class="mobile-btn">
+            <button data - mobile - menu - close type="button" class="mobile-btn js-close-menu">
               <svg width="18px" height="18px" class="modal-close">
                  <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
               </svg>
@@ -86,9 +86,9 @@
         </li>
       </ul>
       <ul class="list soc__mobile">
-        <li><a class="soc_mobile_link">Instagram</a></li>
-        <li><a class="soc_mobile_link">Twitter</a></li>
-        <li><a class="soc_mobile_link">Facebook</a></li>
+        <li><a class="soc_mobile_link soc__after">Instagram</a></li>
+        <li><a class="soc_mobile_link soc__after">Twitter</a></li>
+        <li><a class="soc_mobile_link soc__after">Facebook</a></li>
         <li><a class="soc_mobile_link">LinkedIn</a></li>
       </ul>
       </div>
@@ -173,6 +173,11 @@
         <h2 class="title">Наша команда</h2>
         <ul class="list stuff-list">
           <li class="stuff-img">
+            
+            <picture>
+              <source  srcset="./images/img(4).jpg 1x, ./images/product designer 2x.jpg 2x" media="(min-width:1200px)">
+              <source  srcset="./images/stuff-1-tab.jpg 1x, ./images/stuff-1-2x-tab.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/stuff-1-mob.jpg 1x, ./images/stuff-1-2x-mob.jpg 2x" media="(min-width:480px)">
             <img
             srcset="./images/img(4).jpg 1x, ./images/product designer 2x.jpg 2x"
               src="./images/img(4).jpg"
@@ -180,6 +185,7 @@
               width="270"
               height="260"
             />
+            </picture>
               <div class="stuff-container">
             <h3 class="stuff">Ігор Дем'яненко</h3>
             <p class="position">Product Designer</p>
@@ -213,6 +219,10 @@
             </div>
           </li>
           <li class="stuff-img">
+             <picture>
+              <source  srcset="./images/img(1)(1).jpg 1x, ./images/frontend developer 2x.jpg 2x" media="(min-width:1200px)">
+              <source  srcset="./images/stuff-2-tab.jpg 1x, ./images/stuff-2-2x-tab.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/stuff-2-mob.jpg 1x, ./images/stuff-2-2x-mob.jpg 2x" media="(min-width:480px)">
             <img
             srcset="./images/img(1)(1).jpg 1x, ./images/frontend developer 2x.jpg 2x"
               src="./images/img(1)(1).jpg"
@@ -220,6 +230,7 @@
               width="270"
               height="260"
             />
+             </picture>
             <div class="stuff-container">
             <h3 class="stuff">Ольга Рєпіна</h3>
             <p class="position">Frontend Developer</p>
@@ -253,6 +264,10 @@
             </div>
           </li>
           <li class="stuff-img">
+            <picture>
+              <source  srcset="./images/img(2)(1).jpg 1x, ./images/marketing 2x.jpg 2x" media="(min-width:1200px)">
+              <source  srcset="./images/stuff-3-tab.jpg 1x, ./images/stuff-3-2x-tab.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/stuff-3-mob.jpg 1x, ./images/stuff-3-2x-mob.jpg 2x" media="(min-width:480px)">
             <img
             srcset="./images/img(2)(1).jpg 1x, ./images/marketing 2x.jpg 2x"
               src="./images/img(2)(1).jpg"
@@ -260,6 +275,7 @@
               width="270"
               height="260"
             />
+            </picture>
             <div class="stuff-container">
             <h3 class="stuff">Микола Тарасов</h3>
             <p class="position">Marketing</p>
@@ -293,6 +309,10 @@
             </div>
           </li>
           <li class="stuff-img">
+            <picture>
+              <source  srcset="./images/img(3)(1).jpg 1x, ./images/UI designer.jpg 2x" media="(min-width:1200px)">
+              <source  srcset="./images/stuff-4-tab.jpg 1x, ./images/stuff-4-2x-tab.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/stuff-4-mob.jpg 1x, ./images/stuff-4-2x-mob.jpg 2x" media="(min-width:480px)">
             <img
             srcset="./images/img(3)(1).jpg 1x, ./images/UI designer.jpg 2x"
               src="./images/img(3)(1).jpg"
@@ -300,6 +320,7 @@
               width="270"
               height="260"
             />
+            </picture>
             <div class="stuff-container">
             <h3 class="stuff">Михайло Єрмаков</h3>
             <p class="position">UI Designer</p>
@@ -513,7 +534,13 @@
             </div>
           </div>
         </div>
-        <script src="./js/modal.js"></script>
+         <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
         <script src="./js/menu.js"></script>
+        <script src="./js/modal.js"></script>
   </body>
 </html>

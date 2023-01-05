@@ -107,6 +107,7 @@ header {
   font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  gap: 10px;
   @media screen and (min-width: 768px) {
     display: flex;
   }
@@ -114,6 +115,7 @@ header {
     margin-right: 0px;
     margin-left: auto;
     font-size: 14px;
+    gap: 0px;
     & .contacts:not(:last-child) {
       margin-right: 50px;
     }
@@ -154,10 +156,10 @@ header {
   top: 0px;
   left: 0px;
   right: 0px;
+  z-index: 999;
 }
 .mobile__list {
   display: block;
-  // margin-bottom: 302px;
 }
 .mobile__list > li:not(:last-child) {
   margin-bottom: 35px;
@@ -173,6 +175,10 @@ header {
   color: #212121;
   display: block;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile_link:hover,
+.mobile_link:focus {
+  color: #2196f3;
 }
 .mob__current {
   color: #2196f3;
@@ -204,17 +210,17 @@ header {
   height: 100vh;
   justify-content: space-between;
 }
-.contacts__list__phone {
-  width: 296px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
-  letter-spacing: 0.02em;
+// .contacts__list__phone {
+//   width: 296px;
+//   font-family: "Roboto";
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 34px;
+//   line-height: 40px;
+//   letter-spacing: 0.02em;
 
-  color: #2196f3;
-}
+//   color: #2196f3;
+// }
 .contacts__list__mail {
   font-family: "Roboto";
   font-style: normal;
@@ -236,19 +242,28 @@ header {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
 
   letter-spacing: 0.02em;
 
   color: #2196f3;
-  &::after {
-    margin-left: 10px;
-    content: " ";
-    position: absolute;
-    width: 0px;
-    height: 22px;
-    display: inline;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-  }
+  // &::after {
+  //   margin-left: 10px;
+  //   content: " ";
+  //   position: absolute;
+  //   width: 0px;
+  //   height: 22px;
+  //   display: inline;
+  //   border: 1px solid rgba(33, 33, 33, 0.2);
+  // }
+}
+.soc__after::after {
+  margin-left: 10px;
+  content: " ";
+  position: absolute;
+  width: 0px;
+  height: 22px;
+  display: inline;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
