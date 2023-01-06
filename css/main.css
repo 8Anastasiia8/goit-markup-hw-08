@@ -585,10 +585,16 @@ header {
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 768px) {
+  .studio-advantages {
+    gap: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .studio-advantages {
     flex-wrap: nowrap;
     width: 100%;
+    gap: 0px;
   }
 }
 
@@ -609,8 +615,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .advntg-list {
-    width: calc((100% - 60px) / 2);
-    margin-right: 30px;
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -630,6 +635,7 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  text-align: center;
 }
 @media screen and (min-width: 480px) {
   .adventages-list {
@@ -743,8 +749,8 @@ header {
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: transparent;
   border: none;
   border-radius: 50%;
@@ -790,10 +796,15 @@ header {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 13px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+@media screen and (min-width: 480px) {
+  .soc_mobile_link {
+    font-size: 18px;
+  }
 }
 
 .soc__after::after {
@@ -1646,7 +1657,7 @@ img {
 .title {
   display: flex;
   justify-content: center;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
